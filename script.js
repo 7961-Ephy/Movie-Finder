@@ -14,7 +14,7 @@ async function fetchMovie() {
 
     //   Url and Key Variables
     const key = "dbf96212";
-    const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+    const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
     //   Fetching the API
     const response = await fetch(url);
