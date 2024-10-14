@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Guide App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Enter movie name here..."
+          id="movie-name"
+          value=""
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="result" style="display: none">
+        <div class="top">
+          <div class="left">
+            <img src="" alt="" id="movie-img" />
+          </div>
+          <div class="right">
+            <h3 class="title" id="title"></h3>
+            <p class="rating" id="rating"></p>
+            <div class="details">
+              <p id="rated"></p>
+              <p id="year"></p>
+              <p id="runtime"></p>
+            </div>
+            <div class="movie-type">
+              <div><p>Action</p></div>
+              <div><p>Adventure</p></div>
+              <div><p>Sci-Fi</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="upper">
+            <h3>Plot:</h3>
+            <p id="plot"></p>
+          </div>
+          <div class="lower">
+            <h3>Cast</h3>
+            <p id="cast"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
